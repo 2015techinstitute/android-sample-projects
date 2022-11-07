@@ -2,12 +2,15 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
 }
 
 android {
     namespace 'com.example2.mvc'
     compileSdk 32
+
+    buildFeatures {
+        viewBinding true
+    }
 
     defaultConfig {
         minSdk 23
@@ -44,12 +47,6 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.9'
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-
-    //Dagger - Hilt
-    implementation "com.google.dagger:hilt-android:2.42"
-    kapt "com.google.dagger:hilt-android-compiler:2.42"
-    //implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
-    kapt "androidx.hilt:hilt-compiler:1.0.0"
 
     implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.4.1'
 

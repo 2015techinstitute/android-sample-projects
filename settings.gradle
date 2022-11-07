@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "androidSampleProjects"
 include ':app'
-include ':mvc_passive'
+include ':mvc'
 include ':mvp'

@@ -12,10 +12,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-class MVCActivity : AppCompatActivity() {
+class PassiveMVCActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMvcBinding
-
     private lateinit var repository: PostRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +31,7 @@ class MVCActivity : AppCompatActivity() {
                     delay(1000L)
                     val posts = result.body() as PostDataFromApi
                     delay(1000L)
-                    Toast.makeText(this@MVCActivity, posts.toString(), Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@PassiveMVCActivity, posts.toString(), Toast.LENGTH_SHORT).show()
                     delay(1000L)
                     binding.txtPost.text = posts.toString()
                 }

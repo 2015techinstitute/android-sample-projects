@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MVCActivity">
+    tools:context=".ui.ActiveMVCActivity">
 
     <TextView
         android:id="@+id/txtPost"
@@ -20,6 +20,6 @@
         android:text="@string/get_posts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@id/txtPost" />
+        app:layout_constraintTop_toBottomOf="@id/txtPost" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

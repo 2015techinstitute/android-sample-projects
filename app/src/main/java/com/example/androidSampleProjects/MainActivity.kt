@@ -4,7 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.androidSampleProjects.databinding.ActivityMainBinding
-import com.example2.mvc.ui.MVCActivity
+import com.example2.mvc.ui.ActiveMVCActivity
+import com.example2.mvc.ui.PassiveMVCActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnPassiveMVC.setOnClickListener { startActivity(Intent(this, MVCActivity::class.java)) }
-        binding.btnActiveMVC.setOnClickListener { startActivity(Intent(this, MVCActivity::class.java)) }
-        binding.btnMVP.setOnClickListener { startActivity(Intent(this, MVCActivity::class.java)) }
+        binding.btnPassiveMVC.setOnClickListener { startActivity(Intent(this, PassiveMVCActivity::class.java)) }
+        binding.btnActiveMVC.setOnClickListener { startActivity(Intent(this, ActiveMVCActivity::class.java)) }
+        binding.btnMVP.setOnClickListener { startActivity(Intent(this, PassiveMVCActivity::class.java)) }
     }
 }

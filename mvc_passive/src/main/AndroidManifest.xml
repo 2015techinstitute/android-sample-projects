@@ -8,12 +8,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Androidsampleprojects">
-        <activity
-            android:name="com.example3.mvp.MVPActivity"
+        <activity android:name="com.example2.mvc.ui.MVCActivity"
             android:exported="true">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
     </application>
 

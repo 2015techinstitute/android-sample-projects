@@ -5,14 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    
     <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/navigate_to_one_of_the_below_screens"
+        app:layout_constraintBottom_toTopOf="@id/btnPassiveMVC"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPassiveMVC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/passive_mvc"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnActiveMVC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/active_mvc"
+        app:layout_constraintTop_toBottomOf="@id/btnPassiveMVC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMVP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mvp"
+        app:layout_constraintTop_toBottomOf="@id/btnActiveMVC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

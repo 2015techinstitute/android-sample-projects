@@ -12,7 +12,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "android-sample-projects"
+rootProject.name = "androidSampleProjects"
 include ':app'
+include ':mvc_passive'
 include ':mvp'
-include ':mvc'

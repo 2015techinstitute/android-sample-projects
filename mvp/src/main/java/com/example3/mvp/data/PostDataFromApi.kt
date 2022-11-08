@@ -1,4 +1,4 @@
-package com.example3.mvp
+package com.example3.mvp.data
 
 import kotlinx.serialization.Serializable
 

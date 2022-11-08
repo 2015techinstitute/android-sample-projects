@@ -1,5 +1,6 @@
-package com.example3.mvp
+package com.example3.mvp.data
 
+import com.example3.mvp.network.RetrofitService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.Response

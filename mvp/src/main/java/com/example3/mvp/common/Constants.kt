@@ -1,4 +1,4 @@
-package com.example3.mvp
+package com.example3.mvp.common
 
 class Constants {
     companion object{

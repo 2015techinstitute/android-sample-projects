@@ -1,4 +1,6 @@
-package com.example3.mvp
+package com.example3.mvp.presenter
+
+import com.example3.mvp.data.PostDataFromApi
 
 class MainContract {
     interface PresenterInterface {

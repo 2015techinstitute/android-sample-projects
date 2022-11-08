@@ -1,5 +1,7 @@
-package com.example3.mvp
+package com.example3.mvp.network
 
+import com.example3.mvp.common.Constants
+import com.example3.mvp.data.PostDataFromApi
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

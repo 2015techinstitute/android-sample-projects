@@ -3,7 +3,7 @@ package com.example3.mvp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.mvp.databinding.ActivityMvpBinding
+import com.example3.mvp.databinding.ActivityMvpBinding
 import com.example3.mvp.data.PostDataFromApi
 import com.example3.mvp.data.PostRepository
 import com.example3.mvp.data.PostRepositoryImpl

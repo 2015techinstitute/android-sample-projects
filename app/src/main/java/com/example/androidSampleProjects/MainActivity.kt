@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.androidSampleProjects.databinding.ActivityMainBinding
 import com.example2.mvc.ui.ActiveMVCActivity
 import com.example2.mvc.ui.PassiveMVCActivity
+import com.example3.mvp.MVPActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,6 +19,6 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnPassiveMVC.setOnClickListener { startActivity(Intent(this, PassiveMVCActivity::class.java)) }
         binding.btnActiveMVC.setOnClickListener { startActivity(Intent(this, ActiveMVCActivity::class.java)) }
-        binding.btnMVP.setOnClickListener { startActivity(Intent(this, PassiveMVCActivity::class.java)) }
+        binding.btnMVP.setOnClickListener { startActivity(Intent(this, MVPActivity::class.java)) }
     }
 }
